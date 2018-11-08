@@ -1,6 +1,4 @@
 const express = require('express');
-const mongoose = require('mongoose');
-
 const todoController = require('./controllers/todoController');
 
 const app = express();
@@ -12,7 +10,6 @@ app.set('view engine', 'ejs');
 //static files
 
 app.use(express.static('./public'));
-mongoose.connect('mongodb://localhost/twitter', { useNewUrlParser: true });
 
 //fire controllers
 todoController(app);
