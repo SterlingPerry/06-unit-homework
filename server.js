@@ -2,7 +2,6 @@ const express = require('express');
 const todoController = require('./controllers/todoController');
 const app = express();
 
-const io = require('socket.io')(server);
 const mongoose = require('mongoose');
 const PORT  = process.env.PORT || 4000;
 
