@@ -1,7 +1,7 @@
 {
   "name": "todo-app",
   "version": "1.0.0",
-  "description": "CSS and asset files for the Net Ninja YouTube nodejs playlist",
+  "description": "homework 6: todo list using express, mongo",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

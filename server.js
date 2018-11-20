@@ -17,5 +17,6 @@ app.use(express.static('./public'));
 todoController(app);
 
 //listen to port
-app.listen(4000);
-console.log('you are listeing to port 4000');
+app.listen(process.env.PORT || 4000, function(){
+console.log('Express server listening on port %d in %s mode', this.address().port, app.settings.env);
+});
